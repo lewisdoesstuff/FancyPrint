@@ -24,12 +24,13 @@ All colors are configurable though `FancyPrint.Colors`
 
 ### Building
 
-* Building the library from scratch just requires you to download the solution, then build this through your .NET IDE of choise
+* Building the library from scratch just requires you to download the solution, then build this through your .NET IDE of choice
 * You can also use `dotnet build` from the CLI to build the file.
 
 ### Installing
 
 * Add reference to FancyPrint.dll in your .NET Project.
+* You can also add the `FancyPrint` NuGet package from the CLI or your IDE.
 
 ### Usage
 
