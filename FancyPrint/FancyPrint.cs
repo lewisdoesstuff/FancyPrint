@@ -1,7 +1,13 @@
-﻿using System;
+﻿// Lew's FancyPrint Library!
+using System;
 
 namespace FancyPrint
 {
+    /// <summary>
+    /// Colors defined here!
+    /// Method text is printed [In brackets] at the start of the line.
+    /// Override in your program with FancyPrint.Colors.x = ConsoleColor.x;
+    /// </summary>
     public static class Colors
     {
         public static ConsoleColor Success = ConsoleColor.Green;
@@ -13,6 +19,13 @@ namespace FancyPrint
 
     public static class Print
     {
+        /// <summary>
+        /// Method is identical for all options.
+        /// Set color to Method color, print inside [brackets]
+        /// Rest color, write the text (in specific color if not WriteStandard), then print newline.
+        /// </summary>
+        /// <param name="method"> Given method (or anything, really) to be printed inside [brackets] </param>
+        /// <param name="text"> The text you'd like printing. Add \n to print newlines as usual. </param>
         public static void WriteStandard(string method, string text)
         {
             Console.ForegroundColor = Colors.Method;
@@ -20,8 +33,6 @@ namespace FancyPrint
             Console.ResetColor();
             Console.Write(text);
             Console.WriteLine();
-
-
         }
 
         public static void WriteSuccess(string method, string text)
