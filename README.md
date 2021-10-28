@@ -1,4 +1,6 @@
 # FancyPrint
+![Build](https://github.com/lewisdoesstuff/FancyPrint/actions/workflows/dotnet.yml/badge.svg)
+
 
 A C# .NET Library for printing to the console with style!
 
