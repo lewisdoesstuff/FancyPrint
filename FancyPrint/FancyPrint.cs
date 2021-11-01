@@ -10,10 +10,11 @@ namespace FancyPrint
     /// </summary>
     public static class Colors
     {
+        public static ConsoleColor Standard = ConsoleColor.White;
         public static ConsoleColor Success = ConsoleColor.Green;
         public static ConsoleColor Warn = ConsoleColor.Yellow;
         public static ConsoleColor Error = ConsoleColor.Red;
-
+        
         public static ConsoleColor Method = ConsoleColor.Cyan;
     }
 
@@ -30,9 +31,10 @@ namespace FancyPrint
         {
             Console.ForegroundColor = Colors.Method;
             Console.Write($"[{method}] ");
-            Console.ResetColor();
+            Console.ForegroundColor = Colors.Standard;
             Console.Write(text);
             Console.WriteLine();
+            Console.ResetColor();
         }
 
         public static void WriteSuccess(string method, string text)

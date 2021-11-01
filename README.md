@@ -45,8 +45,9 @@ C# Example
             FancyPrint.Print.WriteSuccess("Docs", "This worked!");
             FancyPrint.Print.WriteWarn("Docs", "This kinda worked!");
             FancyPrint.Print.WriteError("Docs", "This didn't work!");
-
-            // Change method, success, warning, and error colors to anything you wish!
+            FancyPrint.Print.WriteStandard("Docs", "This is some information.");
+           
+            // Change method, success, warning, and error colors to anything you wish! 
             FancyPrint.Colors.Method = ConsoleColor.Magenta;
             Console.WriteLine();
             FancyPrint.Print.WriteSuccess("Docs", "Now in purple!");
