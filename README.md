@@ -61,6 +61,9 @@ C# Example
 
 ## Version History
 
+* 0.1.1
+    * Added color option to PrintStandard()
+
 * 0.1
     * Initial Release
 
