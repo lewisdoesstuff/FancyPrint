@@ -53,7 +53,7 @@ C# Example
             FancyPrint.Print.WriteSuccess("Docs", "Now in purple!");
         }
 ```
-![Screenshot 2021-10-28 130137](https://user-images.githubusercontent.com/8160191/139251745-b29752d9-3911-4515-9b30-8401d6b88c9f.png)
+![image](https://user-images.githubusercontent.com/8160191/139675714-a0b099c3-3c21-40f2-8bc4-7282db8487fa.png)
 
 ## Authors
 
