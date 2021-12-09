@@ -51,6 +51,15 @@ C# Example
             FancyPrint.Colors.Method = ConsoleColor.Magenta;
             Console.WriteLine();
             FancyPrint.Print.WriteSuccess("Docs", "Now in purple!");
+            
+            FancyPrint.Colors.Success = ConsoleColor.Cyan;
+            Console.WriteLine();
+            FancyPrint.Print.WriteSuccess("Docs", "No Added Sugar!");
+            Console.WriteLine();
+            
+            // Print only text by passing an empty string as the method
+            FancyPrint.Print.WriteWarn("","Just the text!");
+            Console.ReadLine();
         }
 ```
 ![image](https://user-images.githubusercontent.com/8160191/139675714-a0b099c3-3c21-40f2-8bc4-7282db8487fa.png)
@@ -60,6 +69,9 @@ C# Example
 [lewisdoesstuff](https://github.com/lewisdoesstuff)
 
 ## Version History
+
+* 0.1.2
+  * Passing an empty string as method doesn't display "[]"
 
 * 0.1.1
     * Added color option to PrintStandard()

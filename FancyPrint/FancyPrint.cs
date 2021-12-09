@@ -23,14 +23,18 @@ namespace FancyPrint
         /// <summary>
         /// Method is identical for all options.
         /// Set color to Method color, print inside [brackets]
-        /// Rest color, write the text (in specific color if not WriteStandard), then print newline.
+        /// Set color to corresponding method, write the text, then print newline.
+        /// Reset the color.
         /// </summary>
-        /// <param name="method"> Given method (or anything, really) to be printed inside [brackets] </param>
+        /// <param name="method"> Given method (or anything, really) to be printed inside [brackets].</param>
         /// <param name="text"> The text you'd like printing. Add \n to print newlines as usual. </param>
         public static void WriteStandard(string method, string text)
         {
-            Console.ForegroundColor = Colors.Method;
-            Console.Write($"[{method}] ");
+            if (!string.IsNullOrWhiteSpace(method))
+            {
+                Console.ForegroundColor = Colors.Method;
+                Console.Write($"[{method}] ");
+            }
             Console.ForegroundColor = Colors.Standard;
             Console.Write(text);
             Console.WriteLine();
@@ -39,8 +43,11 @@ namespace FancyPrint
 
         public static void WriteSuccess(string method, string text)
         {
-            Console.ForegroundColor = Colors.Method;
-            Console.Write($"[{method}] ");
+            if (!string.IsNullOrWhiteSpace(method))
+            {
+                Console.ForegroundColor = Colors.Method;
+                Console.Write($"[{method}] "); 
+            }
             Console.ForegroundColor = Colors.Success;
             Console.Write(text);
             Console.WriteLine();
@@ -49,8 +56,11 @@ namespace FancyPrint
 
         public static void WriteWarn(string method, string text)
         {
-            Console.ForegroundColor = Colors.Method;
-            Console.Write($"[{method}] ");
+            if (!string.IsNullOrWhiteSpace(method))
+            {
+                Console.ForegroundColor = Colors.Method;
+                Console.Write($"[{method}] "); 
+            }
             Console.ForegroundColor = Colors.Warn;
             Console.Write(text);
             Console.WriteLine();
@@ -59,8 +69,11 @@ namespace FancyPrint
 
         public static void WriteError(string method, string text)
         {
-            Console.ForegroundColor = Colors.Method;
-            Console.Write($"[{method}] ");
+            if (!string.IsNullOrWhiteSpace(method))
+            {
+                Console.ForegroundColor = Colors.Method;
+                Console.Write($"[{method}] "); 
+            }
             Console.ForegroundColor = Colors.Error;
             Console.Write(text);
             Console.WriteLine();
