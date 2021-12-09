@@ -62,7 +62,7 @@ C# Example
             Console.ReadLine();
         }
 ```
-![image](https://user-images.githubusercontent.com/8160191/139675714-a0b099c3-3c21-40f2-8bc4-7282db8487fa.png)
+![image](https://user-images.githubusercontent.com/8160191/145424125-7f9baab8-d47b-49a5-9931-a46f501b74b1.png)
 
 ## Authors
 
